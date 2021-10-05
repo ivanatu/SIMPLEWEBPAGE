@@ -1,0 +1,87 @@
+body {
+  font-family: Nunito;
+  font-style: normal;
+}
+.carousel { height: 100vh;}
+.carousel-inner,.carousel-item { height: 100%;}
+.carousel-item img { 
+  float: right;
+  margin-top: 200px;
+} 
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.carousel-indicators {
+  bottom: 30px;
+}
+.card {
+  background-color: #ffffff61;
+  font-family: Nunito;
+  width: 613px;
+  height: 265px;
+  margin-top: 200px;
+  margin-left: 96px;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+}
+.btn {
+  width: 144px;
+  height: 41px;
+  left: 127px;
+  top: 304px;
+  color: black;
+  font-weight: 800;
+  background: linear-gradient(90deg, #FAD136 0%, #FADD49 100%);
+  border-radius: 35px;
+}
+.btn:hover {
+  color: #0b8943;
+  background-color: #e8ff53;
+  border-color: #86ddb6;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .card-title {
+    font-size: 4rem;
+  }
+  .card {
+    width: 95%;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25%;
+  }
+  .carousel-item img {
+    position: absolute;
+    bottom: 142px;
+    width: 75%;
+    right: 0px;
+  }
+  p.card-text {
+    font-size: 3rem;
+  }
+  .btn {
+    width: 238px;
+    height: 86px;
+    font-size: 2rem;
+  }
+}
